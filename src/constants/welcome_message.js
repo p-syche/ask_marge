@@ -61,7 +61,7 @@ export const welcomeSpeechBubble = {
   }
 };
 
-export const manageWelcomeMessage = (currentText, setCurrentText, setCurrentAvatar) => {
+export const manageWelcomeMessage = (currentText, setCurrentText, setCurrentAvatar, setIntroIsDone) => {
   switch(currentText) {
     case "intro":
       setCurrentText("continueFirst");
@@ -98,6 +98,11 @@ export const manageWelcomeMessage = (currentText, setCurrentText, setCurrentAvat
     case "continueEight":
       setCurrentText("continueNinth");
       setCurrentAvatar(avatar6);   
+      break;
+    case "continueNinth":
+      setCurrentText("continueNinth");
+      setCurrentAvatar(avatar6);   
+      setIntroIsDone(true);
       break;
     default:
       return "intro";

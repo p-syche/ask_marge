@@ -3,7 +3,7 @@ import { mlargePic } from "./constants/mlarge_pic";
 
 import './assets/polaroid.css';
 
-const Polaroid = ({ currentText }) => {
+const Polaroid = ({ currentText, introIsDone }) => {
   const [ currentPic, setCurrentPic ] = useState({
     src: "",
     url: "",
@@ -20,7 +20,8 @@ const Polaroid = ({ currentText }) => {
       currentText === "continueFirst" ||
       currentText === "continueSecond" ||
       currentText === "continueThird" ||
-      currentText === "continueFourth"
+      currentText === "continueFourth" ||
+      introIsDone === true
     ) {
       return "hide-pic";
     }
@@ -31,7 +32,11 @@ const Polaroid = ({ currentText }) => {
       <div className="item">
         <div className="polaroid">
           <img src={currentPic.src} alt="Computers, servers and cables" />
-          <div className="caption">{currentPic.name}</div>
+          <div className="caption">
+            <a href={currentPic.url} target="_blank">
+              {currentPic.name}
+            </a>
+          </div>
         </div>
       </div>
     </div>

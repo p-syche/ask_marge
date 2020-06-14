@@ -61,9 +61,3 @@ export const mlargePic = [
     name: "Photo by Science in HD"
   }
 ];
-
-// export const manageMlargePics = setCurrentPic => {
-//   const randomPic = mlargePic[Math.floor(Math.random() * mlargePic.length)];
-//   setCurrentPic(randomPic);
-// };
-

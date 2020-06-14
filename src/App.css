@@ -14,11 +14,10 @@
   text-align: center;
   font-weight: 900;
   color: #000000;
+  transition: color 1s linear;
   position: relative;
 }
 
-
-/* speech bubble 9 */
 
 .speech-bubble-triangle:before {
   content: "";
@@ -31,6 +30,8 @@
   border-bottom: 10px solid transparent;
   right: 50%;
   bottom: -23px;
+  opacity: 1;
+  transition: opacity 1s linear;
 }
 
 .speech-bubble-triangle:after {
@@ -44,11 +45,15 @@
   border-bottom: 10px solid transparent;
   right: 50%;
   bottom: -18px;
+  opacity: 1;
+  transition: opacity 1s linear;
 }
 
 .buttons {
   display: flex;
   justify-content: space-around;
+  opacity: 1;
+  transition: opacity 1s linear;
 }
 
 .buttons button {
@@ -76,13 +81,33 @@
 .avatar-container {
   position: absolute;
   bottom: 0;
+  right: 50%;
   display: flex;
   width: 100%;
   justify-content: center;
+  transition: right 1s linear;
 }
 
-.avatar-container img { height: 68vh; }
+.avatar-container img {
+  position: relative;
+  right: -50%;
+  height: 68vh;
+}
 
+.intro-done.avatar-container {
+  max-width: 34%;
+  right: 16%;
+}
+
+.intro-done.speech-bubble {
+  color: #ffffff;
+}
+
+.intro-done.speech-bubble .buttons,
+.intro-done.speech-bubble-triangle:after,
+.intro-done.speech-bubble-triangle:before {
+  opacity: 0;
+}
 
 @keyframes App-logo-spin {
   from {

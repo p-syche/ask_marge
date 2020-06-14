@@ -2,10 +2,11 @@
   opacity: 0;
 }
 
-.wrapper {
+.polaroid-wrapper {
   opacity: 1;
+  transition: opacity 1s linear;
   width: 100%;
-  max-width: 320px;
+  max-width: 34%;
   padding: 0;
   position: absolute;
   bottom: 5%;
