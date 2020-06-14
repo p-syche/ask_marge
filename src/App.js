@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { welcomeSpeechBubble, manageWelcomeMessage } from "./constants/welcome_message";
+import { Polaroid } from "./polaroid";
 
 import './App.css';
 import avatar6 from "./assets/marge_avatars/avatar6.png";
-import avatar1 from "./assets/marge_avatars/avatar1.png";
 
 function App() {
   const [ currentText, setCurrentText ] = useState("intro");
   const [ currentAvatar, setCurrentAvatar ] = useState(avatar6);
+
   const skipAction = () => {
     console.log('will skip');
   };
@@ -21,6 +22,7 @@ function App() {
       <div className="avatar-container">
         <img src={currentAvatar} className="avatar" alt="Marge" />
       </div>
+      <Polaroid currentText={currentText} />
       <div className="speech-bubble speech-bubble-triangle">
         <p>{welcomeSpeechBubble[currentText].p1}</p>
         <p>{welcomeSpeechBubble[currentText].p2}</p>
