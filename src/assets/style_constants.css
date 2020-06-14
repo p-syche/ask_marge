@@ -1,0 +1,9 @@
+$greyInputBg: #dedfed;
+$blueBorder: #7690d6;
+$blueBg: #4870df;
+
+div {
+  --greyInputBg: #dedfed;
+  --blueBorder: #7690d6;
+  --blueBg: #4870df;
+}
