@@ -5,13 +5,13 @@
 .wrapper {
   opacity: 1;
   width: 100%;
+  max-width: 320px;
   padding: 0;
   position: absolute;
   bottom: 5%;
-  right: 0;
+  right: 2%;
   display: flex;
   justify-content: flex-end;
-  width: 100%;
 }
 
 .polaroid-wrapper img {
