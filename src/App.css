@@ -14,7 +14,7 @@
   text-align: center;
   font-weight: 900;
   color: #000000;
-  transition: color 1s linear;
+  transition: color 600ms linear;
   position: relative;
 }
 
@@ -31,7 +31,7 @@
   right: 50%;
   bottom: -23px;
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity 600ms linear;
 }
 
 .speech-bubble-triangle:after {
@@ -46,14 +46,14 @@
   right: 50%;
   bottom: -18px;
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity 600ms linear;
 }
 
 .buttons {
   display: flex;
   justify-content: space-around;
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity 600ms linear;
 }
 
 .buttons button {
@@ -85,7 +85,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  transition: right 1s linear;
+  transition: right 600ms linear;
 }
 
 .avatar-container img {

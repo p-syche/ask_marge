@@ -12,7 +12,7 @@ function App() {
   const [ introIsDone, setIntroIsDone ] = useState(false);
 
   const skipAction = () => {
-    setCurrentText("");
+    setIntroIsDone(true);
   };
 
   const continueAction = () => {

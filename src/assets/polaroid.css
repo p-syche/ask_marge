@@ -4,7 +4,7 @@
 
 .polaroid-wrapper {
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity 600ms linear;
   width: 100%;
   max-width: 34%;
   padding: 0;

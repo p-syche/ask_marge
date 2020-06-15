@@ -33,7 +33,7 @@ const Polaroid = ({ currentText, introIsDone }) => {
         <div className="polaroid">
           <img src={currentPic.src} alt="Computers, servers and cables" />
           <div className="caption">
-            <a href={currentPic.url} target="_blank">
+            <a href={currentPic.url} target="_blank" rel="noopener noreferrer">
               {currentPic.name}
             </a>
           </div>
