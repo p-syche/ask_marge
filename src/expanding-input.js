@@ -1,15 +1,25 @@
 import React, { useState } from 'react';
-
+import { onEnter } from "./assets/keycodes";
 
 function ResizableTextarea() {
   const [ value, setValue ] = useState('');
   const [ rows, setRows ] = useState(1);
-  const [ minRows, setMinRows ] = useState(1)
-  const [ maxRows, setMaxRows ] = useState(15)
+  const [ minRows, setMinRows ] = useState(1);
+  const [ maxRows, setMaxRows ] = useState(15);
+
+  const handleKeyPress = event => {
+    if (event.key === "Enter" ) {
+      event.preventDefault();
+      setValue('');
+      setRows(1);
+    } else {
+      handleChange(event);
+    }
+  }
 
   const handleChange = event => {
     const textareaLineHeight = 24;
-    
+
     const previousRows = event.target.rows;
     event.target.rows = minRows; // reset number of rows in textarea 
     
@@ -30,11 +40,13 @@ function ResizableTextarea() {
   
   return (
     <textarea
+      type="text"
       rows={rows}
       value={value}
       placeholder={'Enter your text here...'}
       className={'textarea'}
-      onChange={event => handleChange(event)}
+      onChange={event => handleKeyPress(event)}
+      onKeyDown={event => handleKeyPress(event)}
     />
   );
 }
