@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { ChatRoom } from "./chat-app";
 import { InputField } from "./input-field";
 
 import './App.css';
@@ -16,7 +15,7 @@ const ChatWindow = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsDoneLoading(true);
-    }, 300);
+    }, 10000);
   }, []);
  
   return (

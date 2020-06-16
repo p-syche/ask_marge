@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Wit, log } from "node-wit";
+import { Wit } from "node-wit";
 import { manageWitResponse } from "./constants/manage-wit-response";
 
 const InputField = () => {
