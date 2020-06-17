@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { onEnter } from "./assets/keycodes";
 
 function ResizableTextarea() {
   const [ value, setValue ] = useState('');
   const [ rows, setRows ] = useState(1);
-  const [ minRows, setMinRows ] = useState(1);
-  const [ maxRows, setMaxRows ] = useState(15);
+  const [ minRows ] = useState(1);
+  const [ maxRows ] = useState(15);
 
   const handleKeyPress = event => {
     if (event.key === "Enter" ) {
@@ -44,7 +43,7 @@ function ResizableTextarea() {
       rows={rows}
       value={value}
       placeholder={'Enter your text here...'}
-      className={'textarea'}
+      className="textarea chat-input"
       onChange={event => handleKeyPress(event)}
       onKeyDown={event => handleKeyPress(event)}
     />

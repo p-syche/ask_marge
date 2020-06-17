@@ -10,7 +10,7 @@ function App() {
     <div className="container mx-auto h-full">
       <div className="w-full h-full flex flex-row items-end pb-24 max-w-screen-lg">
         <div className="w-1/4">This is the left-side avatar placeholder place</div>
-        <div className="w-1/2">
+        <div className="w-1/2 flex justify-center">
           <ChatWrapper />
         </div>
         <div className="w-1/4">
