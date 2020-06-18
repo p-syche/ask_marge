@@ -1,15 +1,24 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-function ResizableTextarea() {
-  const [ value, setValue ] = useState('');
+const propTypes = {
+  messageBody: PropTypes.string,
+  setMessageBody: PropTypes.func,
+  manageSendMessage: PropTypes.func,
+}
+
+function ResizableTextarea(props) {
   const [ rows, setRows ] = useState(1);
   const [ minRows ] = useState(1);
   const [ maxRows ] = useState(15);
 
+  const { messageBody, setMessageBody, manageSendMessage } = props;
+
   const handleKeyPress = event => {
     if (event.key === "Enter" ) {
       event.preventDefault();
-      setValue('');
+      manageSendMessage(messageBody);
+      setMessageBody("");
       setRows(1);
     } else {
       handleChange(event);
@@ -33,7 +42,7 @@ function ResizableTextarea() {
       event.target.scrollTop = event.target.scrollHeight;
     }
     
-    setValue(event.target.value);
+    setMessageBody(event.target.value);
     setRows(currentRows < maxRows ? currentRows : maxRows);
   };
   
@@ -41,7 +50,7 @@ function ResizableTextarea() {
     <textarea
       type="text"
       rows={rows}
-      value={value}
+      value={messageBody}
       placeholder={'Enter your text here...'}
       className="textarea chat-input"
       onChange={event => handleKeyPress(event)}
@@ -50,5 +59,6 @@ function ResizableTextarea() {
   );
 }
 
-export default ResizableTextarea;
+ResizableTextarea.propTypes = propTypes;
 
+export default ResizableTextarea;

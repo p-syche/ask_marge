@@ -13,7 +13,14 @@
   font-weight: bold;
   transition: 0.15s all ease-in-out;
   box-sizing: border-box;
-  resize: none;
+}
+
+.chat-input::-webkit-resizer {
+  display: none;
+}
+
+.chat-input:focus {
+  outline: none;
 }
 
 .chat_button {
@@ -31,10 +38,6 @@
   transition: 0.15s all ease-in-out;
   box-sizing: border-box;
   user-select: none;
-}
-
-.chat_button:focus {
-  outline: none;
 }
 
 .chat_button:hover {
