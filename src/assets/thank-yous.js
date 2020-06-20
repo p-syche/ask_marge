@@ -4,6 +4,9 @@
 // Autogrowing input
 // https://codepen.io/liborgabrhel/pen/eyzwOx
 
+// Animated arrow
+// https://codepen.io/HektorW/pen/eJMMaR
+
 // Dot dot dot Codepen
 // https://codepen.io/mattonit/pen/vLoddq
 

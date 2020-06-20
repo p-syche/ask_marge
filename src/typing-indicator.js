@@ -1,5 +1,5 @@
 import React from 'react';
-import './assets/dots_animation.css';
+import './assets/dots_animation.scss';
 
 function TypingIndicator() {
   return (

@@ -1,9 +1,10 @@
 import React from 'react';
-import './tailwind.generated.css';
+import './tailwind.generated.scss';
 
 import unicornDab from "./assets/marge_avatars/unicorn_dab.png";
 
 import ChatWrapper from "./chat-wrapper";
+import ControlArrow from "./control-arrow";
 
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
         <div className="w-1/2 flex justify-center">
           <ChatWrapper />
         </div>
-        <div className="w-1/4">
+        <div className="w-1/4 relative flex justify-center">
+          <ControlArrow direction="up" />
           <img src={unicornDab} className="avatar" alt="Marge" />
+          <ControlArrow direction="down" />
         </div>
       </div>
     </div>
