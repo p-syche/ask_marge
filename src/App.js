@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './tailwind.generated.scss';
 import './assets/app.scss';
 
 import unicornDab from "./assets/marge_avatars/unicorn_dab.png";
 import morty from "./assets/user_avatars/no_face_fb.jpg";
 
+import ExplanationWrapper from "./explanation-wrapper";
 import ChatWrapper from "./chat-wrapper";
 import ControlArrow from "./control-arrow";
 
 function App() {
+  const [isExplaining, setIsExplaining] = useState(true);
   return (
     <div className="container mx-auto h-full">
       <div className="w-full h-full flex flex-row items-end pb-24 max-w-screen-lg mx-auto">
@@ -20,7 +22,7 @@ function App() {
           <ControlArrow direction="down" />
         </div>
         <div className="w-1/2 flex justify-center">
-          <ChatWrapper />
+          {isExplaining ? <ExplanationWrapper setIsExplaining={setIsExplaining} /> : <ChatWrapper />}
         </div>
         <div className="w-1/4 relative flex justify-center">
           <ControlArrow direction="up" />

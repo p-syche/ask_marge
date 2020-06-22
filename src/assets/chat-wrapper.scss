@@ -33,7 +33,10 @@
   outline: none;
 }
 
-.chat_button {
+.textarea.disabled-textarea { height: 40px; }
+
+.chat_button,
+.disabled_chat_button {
   float: right;
   position: relative;
   width: 40px;
@@ -50,13 +53,16 @@
   user-select: none;
 }
 
-.chat_button:hover {
+.chat_button:not(disabled):hover {
   background-color: #3c559c;
 }
 
-.chat_button svg {
+.chat_button svg,
+.disabled_chat_button svg {
   position: relative;
-  top: 41%;
+  top: 44%;
   transform: translateY(-50%);
   padding: 0 0 0 1px;
 }
+
+.disabled_chat_button { cursor: auto; }

@@ -11,7 +11,6 @@ function MessageList(props) {
   const { messagesList } = props;
   const [ isLoading, setIsLoading ] = useState(true);
   const animationCondition = useCallback(itemIndex => {
-    console.log("when is this run????", itemIndex);
     if (itemIndex === 0 && isLoading === true) {
       return true;
     }
@@ -20,7 +19,6 @@ function MessageList(props) {
 
   useEffect(() => {
     setIsLoading(true);
-    // console.log("tell me when this fires?", messagesList.length)
     setTimeout(() => {
       setIsLoading(false);
     }, 3000)

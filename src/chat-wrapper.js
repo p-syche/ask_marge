@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import SendIcon from '@material-ui/icons/Send';
 import './assets/chat-wrapper.scss';
 import { manageWitResponse } from "./constants/manage-wit-response";
-import { axios } from 'axios';
 
 import MessageList from "./message-list";
 import ResizableTextarea from "./expanding-input";
@@ -19,16 +18,13 @@ function ChatWrapper() {
   const auth = 'Bearer ' + CLIENT_TOKEN;
 
   useEffect(() => {
-    console.log("should be called when URI changes man")
     const fetchData = async () => {
       setIsLoadingReply(true);
  
       try {
         const result = await fetch(uriState, {headers: {Authorization: auth}}).then(res => res.json());
-        console.log("twhat is the result?", result)
         manageWitResponse(result, messagesList);
       } catch (error) {
-        console.log('there was an error?', error)
       }
  
       setIsLoadingReply(false);
