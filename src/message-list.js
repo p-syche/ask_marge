@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types"
 
 import './assets/message-list.scss';
@@ -9,13 +9,31 @@ const propTypes = {
 
 function MessageList(props) {
   const { messagesList } = props;
+  const [ isLoading, setIsLoading ] = useState(true);
+  const animationCondition = useCallback(itemIndex => {
+    console.log("when is this run????", itemIndex);
+    if (itemIndex === 0 && isLoading === true) {
+      return true;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    setIsLoading(true);
+    // console.log("tell me when this fires?", messagesList.length)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000)
+  }, [messagesList.length]);
 
   return (
-    <div className="list-of-messages flex flex-col w-full">
+    <div className="list-of-messages relative flex flex-col-reverse h-full w-full">
       {messagesList.map((msg, index) => {
         return (
-          <div key={index} className={`single-message ${msg.messageAuthor}`}>
-            <span>{msg.messageBody}</span>
+          <div key={index} className={`flex animated-message ${animationCondition(index) === true ? "animate-in" : ""} ${msg.messageAuthor === "user" ? "justify-start" : "justify-end"}`}>
+            <div className={`${msg.messageAuthor} single-message`}>
+              <span>{msg.messageBody}</span>
+            </div>
           </div>
         )
       })}

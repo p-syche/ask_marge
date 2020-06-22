@@ -38,16 +38,24 @@ function ChatWrapper() {
   }, [auth, messagesList, uriState]);
 
   const manageSendMessage = message => {
-    setIsLoadingReply(true);
+    messagesList.unshift({messageBody: message, messageAuthor: "user"});
+
     setMessageReadyToSend(message);
-    setUriState('https://api.wit.ai/message?v=20200513&q=' + message)
-    messagesList.push({messageBody: message, messageAuthor: "user"});
+    setIsLoadingReply(true);  
     setMessageBody("");
+
+    setTimeout(() => {
+      setUriState('https://api.wit.ai/message?v=20200513&q=' + message)
+    }, 3000);
+    
   }
 
   return (
     <div className="flex flex-col items-center w-2/3">
-      <MessageList messagesList={messagesList} />
+      <div className="message-list-wrap w-full relative">
+        <div className="fade-out-wrap absolute top-0" />
+        <MessageList messagesList={messagesList} />
+      </div>
       {isLoadingReply ? <TypingIndicator /> : null}
       <div className="INPUT CONTAINER w-full p-3 bg-white rounded-md">
         <form className="flex flex-row">

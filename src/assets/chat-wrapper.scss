@@ -1,6 +1,16 @@
+.message-list-wrap {
+  height: 68vh;
+
+  .fade-out-wrap {
+    background: linear-gradient(#9fc8ea, transparent);
+    height: 100px;
+    width: 100%;
+    z-index: 9999;
+  }
+}
+
 .chat-input {
   float: left;
-  height: 40px;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 40px;
