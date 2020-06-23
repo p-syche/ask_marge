@@ -9,7 +9,6 @@ const propTypes = {
 }
 
 function ExplanationMessageList({ setIsExplaining }) {
-  const [ isLoading, setIsLoading ] = useState(true);
   const [ showMessageOne, setShowMessageOne ] = useState(true);
   const [ showMessageTwo, setShowMessageTwo ] = useState(false);
   const [ showMessageThree, setShowMessageThree ] = useState(false);
@@ -17,7 +16,6 @@ function ExplanationMessageList({ setIsExplaining }) {
   const [ messageIndex, updateMessageIndex ] = useState(0);
 
   useEffect(() => {
-    setIsLoading(true);
     setShowMessageOne(true);
     setTimeout(() => {
       setShowMessageTwo(true);
@@ -40,7 +38,7 @@ function ExplanationMessageList({ setIsExplaining }) {
   return (
     <div className="list-of-messages relative flex flex-col-reverse h-full w-full">
         {showButtons ? (
-          <div className="EXPLANATION BUTTONS flex mb-3 justify-between">
+          <div className="flex mb-3 justify-between">
             <button className="explanation-button" onClick={() => setIsExplaining(false)}>Skip</button>
             <button className="explanation-button" onClick={() => goToNextMessage()}>Continue</button>
           </div>

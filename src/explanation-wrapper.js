@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from "prop-types";
 import SendIcon from '@material-ui/icons/Send';
 import './assets/chat-wrapper.scss';
-import { manageWitResponse } from "./constants/manage-wit-response";
 
 import ExplanationMessageList from "./explanation-message-list";
 
@@ -21,7 +20,7 @@ function ExplanationWrapper({ setIsExplaining }) {
       <div className="INPUT CONTAINER w-full p-3 bg-white rounded-md opacity-50">
         <form className="flex flex-row">
           <textarea className="textarea chat-input disabled-textarea" disabled />
-          <button className="BUTTON CONTAINER disabled_chat_button flex" disabled type="button">
+          <button className="disabled_chat_button flex" disabled type="button">
             <SendIcon onClick={() => manageSendMessage()} />
           </button>
         </form>

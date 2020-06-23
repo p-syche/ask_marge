@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types"
 
 import './assets/message-list.scss';
@@ -10,12 +10,12 @@ const propTypes = {
 function MessageList(props) {
   const { messagesList } = props;
   const [ isLoading, setIsLoading ] = useState(true);
-  const animationCondition = useCallback(itemIndex => {
+  const animationCondition = itemIndex => {
     if (itemIndex === 0 && isLoading === true) {
       return true;
     }
     return false;
-  });
+  };
 
   useEffect(() => {
     setIsLoading(true);

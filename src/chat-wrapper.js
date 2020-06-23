@@ -10,9 +10,8 @@ import TypingIndicator from "./typing-indicator";
 function ChatWrapper() {
   const [ messageBody, setMessageBody ] = useState("");
   const [ isLoadingReply, setIsLoadingReply ] = useState(false);
-  const [ messageReadyToSend, setMessageReadyToSend ] =useState("");
-  const [ uriState, setUriState ] = useState('https://api.wit.ai/message?v=20200513&q=' + 'hi!')
-  const [ messagesList, setMessagesList ] = useState([]);
+  const [ uriState, setUriState ] = useState('https://api.wit.ai/message?v=20200513&q=hi!')
+  const [ messagesList ] = useState([]);
 
   const CLIENT_TOKEN = 'YQKUWRTVDAGSCNGN46L3QFVD7EQJYQF2';
   const auth = 'Bearer ' + CLIENT_TOKEN;
@@ -36,7 +35,6 @@ function ChatWrapper() {
   const manageSendMessage = message => {
     messagesList.unshift({messageBody: message, messageAuthor: "user"});
 
-    setMessageReadyToSend(message);
     setIsLoadingReply(true);  
     setMessageBody("");
 
