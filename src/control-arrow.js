@@ -4,7 +4,6 @@ import './assets/control-arrow.scss';
 
 function ControlArrow({ direction, fromTopValue, setFromTopValue }) {
   const clickedArrow = () => {
-    console.log("tell me what the from top value is!", fromTopValue);
     if (direction === "up" && fromTopValue >= -470) {
       setFromTopValue(fromTopValue - 26);
     } else if (direction === "down" && fromTopValue <= -32) {

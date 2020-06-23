@@ -69,3 +69,18 @@
 
 // Rick and Morty Morty's dad
 // https://www.pngbarn.com/png-image-bwvss
+
+// Dog with glasses
+// https://www.freepik.com/free-vector/dog-with-drawn-suit_5282528.htm#page=1&query=cartoon%20dog&position=0
+
+// Emotional monsters
+// https://www.freepik.com/free-vector/cartoon-cute-monster-set-funny-fantastic-creatures-with-angry-happy-surprised-emotions_2238482.htm#page=1&query=cartoon%20funny%20animal&position=14
+
+// Cute monsters
+// https://www.freepik.com/free-vector/cute-monsters-cartoon_802767.htm#page=2&query=cartoon+alien&position=18
+
+// Flying robot
+// https://www.freepik.com/free-vector/chatbot-technology-banner-ai-robot-client-support_7062193.htm#page=1&query=cartoon%20ai&position=8
+
+// Orange robot
+// https://www.freepik.com/free-vector/cute-chat-bot-cartoon-collection_6537993.htm#page=1&query=cartoon%20ai&position=28
