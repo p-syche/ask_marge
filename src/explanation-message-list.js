@@ -10,6 +10,7 @@ const propTypes = {
 
 function ExplanationMessageList({ setIsExplaining }) {
   const [ isLoading, setIsLoading ] = useState(true);
+  const [ showMessageOne, setShowMessageOne ] = useState(true);
   const [ showMessageTwo, setShowMessageTwo ] = useState(false);
   const [ showMessageThree, setShowMessageThree ] = useState(false);
   const [ showButtons, setShowButtons ] = useState(false);
@@ -17,6 +18,7 @@ function ExplanationMessageList({ setIsExplaining }) {
 
   useEffect(() => {
     setIsLoading(true);
+    setShowMessageOne(true);
     setTimeout(() => {
       setShowMessageTwo(true);
     }, 1000)
@@ -26,14 +28,21 @@ function ExplanationMessageList({ setIsExplaining }) {
     setTimeout(() => {
       setShowButtons(true);
     }, 3000)
-  }, []);
+  }, [messageIndex, showMessageOne]);
+
+  const goToNextMessage = () => {
+    setShowMessageOne(false);
+    setShowMessageTwo(false);
+    setShowMessageThree(false);
+    updateMessageIndex(messageIndex + 1);
+  }
 
   return (
     <div className="list-of-messages relative flex flex-col-reverse h-full w-full">
         {showButtons ? (
-          <div className="EXPLANATION BUTTONS">
-            <button onClick={() => setIsExplaining(false)}>Skip</button>
-            <button onClick={() => updateMessageIndex(messageIndex + 1)}>Continue</button>
+          <div className="EXPLANATION BUTTONS flex mb-3 justify-between">
+            <button className="explanation-button" onClick={() => setIsExplaining(false)}>Skip</button>
+            <button className="explanation-button" onClick={() => goToNextMessage()}>Continue</button>
           </div>
         ) : null}
         {showMessageThree ? (
@@ -50,11 +59,13 @@ function ExplanationMessageList({ setIsExplaining }) {
             </div>
           </div>
         ) : null}
-        <div className={`flex animated-message justify-end animate-in`}>
-          <div className={`single-message wit`}>
-            <span>{welcomeChat[messageIndex].p1}</span>
+        {showMessageOne ? (
+          <div className={`flex animated-message justify-end animate-in`}>
+            <div className={`single-message wit`}>
+              <span>{welcomeChat[messageIndex].p1}</span>
+            </div>
           </div>
-        </div>
+        ) : null}
     </div>
   )
 }
