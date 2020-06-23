@@ -11,8 +11,8 @@ import avatar9 from "../assets/marge_avatars/avatar9.png";
 export const welcomeChat = [
   {
     p1: "Hi! My name is Marge!",
-    p2: "If you know what you are looking for, feel free to click Skip at the bottom of this speech bubble",
-    p3: "If you want to find out what the shucks is going on here, click Continue",
+    p2: "If you know what you are looking for, feel free to click Skip.",
+    p3: "If you want to find out what the shucks is going on here, click Continue.",
   },
   {
     p1: "Let me explain a little bit then!",

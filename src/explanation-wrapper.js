@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from "prop-types";
 import SendIcon from '@material-ui/icons/Send';
 import './assets/chat-wrapper.scss';
 import { manageWitResponse } from "./constants/manage-wit-response";
@@ -15,7 +16,7 @@ function ExplanationWrapper({ setIsExplaining }) {
     <div className="flex flex-col items-center w-2/3">
       <div className="message-list-wrap w-full relative">
         <div className="fade-out-wrap absolute top-0" />
-        <ExplanationMessageList />
+        <ExplanationMessageList setIsExplaining={setIsExplaining}/>
       </div>
       <div className="INPUT CONTAINER w-full p-3 bg-white rounded-md opacity-50">
         <form className="flex flex-row">
@@ -27,6 +28,10 @@ function ExplanationWrapper({ setIsExplaining }) {
       </div>
     </div>
   );
+}
+
+ExplanationWrapper.propTypes = {
+  setIsExplaining: PropTypes.func.isRequired
 }
 
 export default ExplanationWrapper;
