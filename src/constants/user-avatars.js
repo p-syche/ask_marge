@@ -17,6 +17,8 @@ import sharkLeon from "../assets/user_avatars/shark-leon.png";
 import steve from "../assets/user_avatars/steve.png";
 import unicornDab from "../assets/user_avatars/unicorn_dab.png";
 
+import noFace from "../assets/user_avatars/no_face_fb.jpg";
+
 const userAvatarList = [
   bigHat,
   boy,
@@ -47,5 +49,24 @@ const shuffleArray = array => {
   return array;
 }
 
-export const randomizedAvatar = shuffleArray(userAvatarList);
+const randomizedAvatarArray = shuffleArray(userAvatarList);
 
+const avatarArray = () => {
+  let arrayReady = [];
+  let topOfArray = [];
+  let bottomOfArray = [];
+  randomizedAvatarArray.map((item, index) => {
+    if (index <= 8) {
+      topOfArray.push(item);
+    } else {
+      bottomOfArray.push(item);
+    }
+    return (topOfArray, bottomOfArray);
+  });
+  arrayReady = [...topOfArray, ...bottomOfArray];
+  arrayReady.splice(8, 0, noFace);
+
+  return arrayReady;
+}
+
+export const randomizedAvatar = avatarArray();

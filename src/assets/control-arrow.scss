@@ -1,7 +1,6 @@
 .arrow {
   cursor: pointer;
   height: 60px;
-  position: absolute;
   transition: transform .1s;
   width: 30px;
   
@@ -9,12 +8,10 @@
 
   &.arrow-up {
     transform: rotate(-90deg);
-    top: -64px;
   }
 
   &.arrow-down {
     transform: rotate(90deg);
-    bottom: -64px;
   }
   
   &-top,

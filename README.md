@@ -1,3 +1,6 @@
+Copy to clipboard
+[![Netlify Status](https://api.netlify.com/api/v1/badges/67e2f341-d9c4-4577-bdd7-b0ed7c61b31f/deploy-status)](https://app.netlify.com/sites/ask-marge/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
