@@ -34,3 +34,38 @@
 // Hand drawn faces
 // https://pl.freepik.com/darmowe-wektory/kolekcja-recznie-rysowane-ludzie-avatar_5183186.htm
 
+// Dustin dribble
+// https://dribbble.com/shots/3898604-Dustin-Stranger-things
+
+// Dustin and Steve
+// https://dribbble.com/shots/3930564-Dustin-and-Steve
+
+// Brawl Stars Shark Leon
+// https://www.pinterest.co.uk/pin/844565736355660365/
+
+// Brawl Stars Sandy
+// https://wallpapercave.com/brawl-stars-sandy-wallpapers
+
+// Brawl Stars Leon
+// https://wallpapercave.com/w/wp5800682
+
+// Brawl Stars
+// https://wallpapercave.com/w/wp5402408
+
+// Brawl Stars Sandy 2
+
+
+// Brawl Stars Tara
+// https://wallpapercave.com/w/wp5800536
+
+// Brawl Stars Primo fan art
+// https://wallpapercave.com/w/wp5619034
+
+// Rick and morty dog
+// https://fanart.tv/series/275274/rick-and-morty/
+
+// Rick and Morty dumb Rick
+// https://www.pngwing.com/en/free-png-zappg
+
+// Rick and Morty Morty's dad
+// https://www.pngbarn.com/png-image-bwvss

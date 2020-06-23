@@ -3,24 +3,18 @@ import './tailwind.generated.scss';
 import './assets/app.scss';
 
 import unicornDab from "./assets/marge_avatars/unicorn_dab.png";
-import morty from "./assets/user_avatars/no_face_fb.jpg";
 
 import ExplanationWrapper from "./explanation-wrapper";
 import ChatWrapper from "./chat-wrapper";
 import ControlArrow from "./control-arrow";
+import Avatar from "./avatar";
 
 function App() {
   const [isExplaining, setIsExplaining] = useState(true);
   return (
     <div className="container mx-auto h-full">
       <div className="w-full h-full flex flex-row items-end pb-24 max-w-screen-lg mx-auto">
-        <div className="w-1/4 relative flex justify-center">
-          <ControlArrow direction="up" />
-          <div className="avatar-container flex items-center">
-            <img src={morty} className="avatar" alt="Marge" />
-          </div>
-          <ControlArrow direction="down" />
-        </div>
+        <Avatar />
         <div className="w-1/2 flex justify-center">
           {isExplaining ? <ExplanationWrapper setIsExplaining={setIsExplaining} /> : <ChatWrapper />}
         </div>
