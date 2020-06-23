@@ -28,19 +28,25 @@ function ExplanationMessageList({ setIsExplaining }) {
     }, 3000)
   }, [messageIndex, showMessageOne]);
 
-  const goToNextMessage = () => {
-    setShowMessageOne(false);
-    setShowMessageTwo(false);
-    setShowMessageThree(false);
-    updateMessageIndex(messageIndex + 1);
+  const goToNextMessage = msgIndex => {
+    if (msgIndex !== 8) {
+      setShowMessageOne(false);
+      setShowMessageTwo(false);
+      setShowMessageThree(false);
+      updateMessageIndex(messageIndex + 1);
+    } else {
+      setIsExplaining(false);
+    }
   }
 
   return (
     <div className="list-of-messages relative flex flex-col-reverse h-full w-full">
         {showButtons ? (
-          <div className="flex mb-3 justify-between">
-            <button className="explanation-button" onClick={() => setIsExplaining(false)}>Skip</button>
-            <button className="explanation-button" onClick={() => goToNextMessage()}>Continue</button>
+          <div className={`flex mb-3 ${messageIndex !== 8 ? "justify-between" : "justify-end"}`}>
+            {messageIndex !== 8 ? (
+              <button className="explanation-button" onClick={() => setIsExplaining(false)}>Skip</button>
+            ) : null}
+            <button className="explanation-button" onClick={() => goToNextMessage(messageIndex)}>Continue</button>
           </div>
         ) : null}
         {showMessageThree ? (

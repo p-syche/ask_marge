@@ -14,11 +14,11 @@ function App() {
   return (
     <div className="container mx-auto h-full">
       <div className="w-full h-full flex flex-row items-end pb-24 max-w-screen-lg mx-auto">
-        <Avatar array={randomizedAvatar} />
+        <Avatar array={randomizedAvatar} isExplaining={isExplaining}/>
         <div className="w-1/2 flex justify-center">
           {isExplaining ? <ExplanationWrapper setIsExplaining={setIsExplaining} /> : <ChatWrapper />}
         </div>
-        <Avatar array={randomizedMargeAvatar} />
+        <Avatar array={randomizedMargeAvatar} isExplaining={isExplaining}/>
       </div>
     </div>
   );

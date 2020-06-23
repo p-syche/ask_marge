@@ -4,12 +4,14 @@ import './assets/avatar.scss';
 
 import ControlArrow from "./control-arrow";
 
-function Avatar({ array }) {
+function Avatar({ array, isExplaining }) {
   const [ fromTopValue, setFromTopValue ] = useState(-217);
 
   return (
     <div className="relative w-1/4 flex flex-col justify-center transform translate-y-16">
-      <ControlArrow direction="up" fromTopValue={fromTopValue} setFromTopValue={setFromTopValue} />
+      {isExplaining ? null : (
+        <ControlArrow direction="up" fromTopValue={fromTopValue} setFromTopValue={setFromTopValue} />
+      )}
       <div className="avatar-wrapper relative flex flex-col justify-center overflow-hidden">
         <div className="absolute avatar-list" style={{ top: fromTopValue + "rem" }}>
           {array.map((item, index) => {
@@ -21,9 +23,12 @@ function Avatar({ array }) {
           })}
         </div>
       </div>
-      <ControlArrow direction="down" fromTopValue={fromTopValue} setFromTopValue={setFromTopValue} />
+      {isExplaining ? (
+        <div className="bottom-arrow-placeholder" />
+      ) : (
+        <ControlArrow direction="down" fromTopValue={fromTopValue} setFromTopValue={setFromTopValue} />
+      )}
     </div>
-   
   );
 }
 
