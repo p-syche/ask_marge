@@ -1,13 +1,16 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/67e2f341-d9c4-4577-bdd7-b0ed7c61b31f/deploy-status)](https://app.netlify.com/sites/ask-marge/deploys)
 
-## [Ask Marge](https://ask-marge.netlify.app/)
+### [Ask Marge](https://ask-marge.netlify.app/)
 
 A Chat Bot, trained with Wit.ai, ready to answer sex-related questions while respecting user's privacy.
 
+## Why this was created
 
 This project was created for a [Facebook Hackathon](https://fbai2.devpost.com/), it is deployed with [Netlify](https://www.netlify.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Thank Yous
 
 This project used the following resources:
 
