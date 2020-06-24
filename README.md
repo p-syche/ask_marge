@@ -10,6 +10,10 @@ This project was created for a [Facebook Hackathon](https://fbai2.devpost.com/),
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Answers
+
+Predefined answers can be found in [manage-wit-response.js](https://github.com/p-syche/ask_marge/blob/master/src/constants/manage-wit-response.js) as well as in the files in the [src/constants/intent-responses folder](https://github.com/p-syche/ask_marge/tree/master/src/constants/intent-responses)
+
 ### Thank Yous
 
 This project used the following resources:
