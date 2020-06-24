@@ -128,6 +128,11 @@ const detectedIntent = (intent, messagesList) => {
       
       messagesList.unshift({messageBody: thanks, messageAuthor: "wit"});     
       return messagesList;
+    case "about_me":
+      const about_me = "I'm a Chat Bot connected with a Machine Learning Algorythm. I try to answer simple questions about sex and sex-related questions. That's all! :)";
+      
+      messagesList.unshift({messageBody: about_me, messageAuthor: "wit"});     
+      return messagesList;
     default:
       messagesList.unshift({messageBody: "Unfortunately I'm not sure what you want to learn about", messageAuthor: "wit"});     
     }
