@@ -84,6 +84,11 @@ const detectedIntent = (intent, messagesList) => {
 
       messagesList.unshift({messageBody: sex, messageAuthor: "wit"});     
       return messagesList;
+    case "learn_sex_synonym":
+      const sex_synonym = "That's another word for sex."
+
+      messagesList.unshift({messageBody: sex_synonym, messageAuthor: "wit"});     
+      return messagesList;
     case "learn_scrotum":
       const scrotum = "The scrotum is the bag that holds the testicles (commonly called balls) in male mammals. It is made of skin and muscle and is found between the penis and anus. It is often covered in pubic hair and becomes tight when the male is aroused.";
       messagesList.unshift({messageBody: scrotum, messageAuthor: "wit"});     
@@ -132,6 +137,21 @@ const detectedIntent = (intent, messagesList) => {
       const about_me = "I'm a Chat Bot connected with a Machine Learning Algorythm. I try to answer simple questions about sex and sex-related questions. That's all! :)";
       
       messagesList.unshift({messageBody: about_me, messageAuthor: "wit"});     
+      return messagesList;
+    case "make_babies":
+      const make_babies = "Adults make babies when they have sex. Sexual intercourse (or simply called sex) is the insertion and thrusting of a male's penis into a female's vagina. People and animals that sexually reproduce use sexual intercourse to have babies.";
+
+      messagesList.unshift({messageBody: make_babies, messageAuthor: "wit"});     
+      return messagesList;
+    case "sex_duration":
+      const sex_duration = "According to surveys, vaginal sex that lasts one to two minutes is “too short.” Vaginal sex that lasts 10 to 30 minutes is considered “too long.” So how long should vaginal sex actually last? The sex therapists surveyed say that anywhere from 7 to 13 minutes is “desirable.”"
+
+      messagesList.unshift({messageBody: sex_duration, messageAuthor: "wit"});     
+      return messagesList;
+    case "penis_size":
+      const penis_size = "Men everywhere worry that their penis is smaller than it should be or that it won't satisfy a lover. But research suggests that most men underestimate the size of their pride and joy. Most men's penises are somewhere around 9cm (3.75in) long when not erect, but it's normal for them to be shorter or longer than this. Some things can make your penis temporarily smaller, such as swimming or being cold.";
+
+      messagesList.unshift({messageBody: penis_size, messageAuthor: "wit"});     
       return messagesList;
     default:
       messagesList.unshift({messageBody: "Unfortunately I'm not sure what you want to learn about", messageAuthor: "wit"});     
