@@ -1,0 +1,6 @@
+export const allForeskinAnswers = [
+  "The foreskin, or prepuce, is a fold of skin that covers the glans penis when the penis is uncircumcised. Most male mammals either have a foreskin that covers the glans penis or a sheath in which the whole penis can retract.",
+  "The outside of the foreskin is like normal skin but the inside of the foreskin is a membrane like the inside of an eyelid or mouth. The foreskin is attached to the penis by the frenulum, but it can move. It is very stretchy. On the penis, the most sensitive areas to fine-touch are located on the foreskin.",
+  "The foreskin is the double-layered fold of smooth muscle tissue, blood vessels, neurons, skin, and mucous membrane part of the penis that covers and protects the glans penis and the urinary meatus. The foreskin is mobile, fairly stretchable, and acts as a natural lubricant.",
+  "The foreskin is the sheath of skin that covers the head (glans) of the penis. Without regular cleaning, a build-up of a whitish-yellow substance known as 'smegma' can occur under the foreskin, which may cause infection."
+]
