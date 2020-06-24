@@ -1,5 +1,6 @@
 .list-of-messages {
   overflow: scroll;
+   &::-webkit-scrollbar { display: none; }
 
   .animated-message {
     

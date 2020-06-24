@@ -10,7 +10,7 @@ import TypingIndicator from "./typing-indicator";
 function ChatWrapper() {
   const [ messageBody, setMessageBody ] = useState("");
   const [ isLoadingReply, setIsLoadingReply ] = useState(false);
-  const [ uriState, setUriState ] = useState('https://api.wit.ai/message?v=20200513&q=' + 'hi hi hi hi hi!')
+  const [ uriState, setUriState ] = useState('https://api.wit.ai/message?v=20200513&q=hi hi hi hi hi!')
   const [ messagesList ] = useState([]);
 
   const CLIENT_TOKEN = 'YQKUWRTVDAGSCNGN46L3QFVD7EQJYQF2';

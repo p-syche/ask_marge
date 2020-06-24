@@ -1,71 +1,90 @@
-Copy to clipboard
 [![Netlify Status](https://api.netlify.com/api/v1/badges/67e2f341-d9c4-4577-bdd7-b0ed7c61b31f/deploy-status)](https://app.netlify.com/sites/ask-marge/deploys)
+
+## [Ask Marge](https://ask-marge.netlify.app/)
+
+A Chat Bot, trained with Wit.ai, ready to answer sex-related questions while respecting user's privacy.
+
+
+This project was created for a [Facebook Hackathon](https://fbai2.devpost.com/), it is deployed with [Netlify](https://www.netlify.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This project used the following resources:
 
-In the project directory, you can run:
+Configure Tailwind in a Create-React-App app
+https://medium.com/@mikeeeeeeey/create-react-app-tailwind-css-feat-postcss-631d9e33ba8c
 
-### `yarn start`
+Autogrowing input
+https://codepen.io/liborgabrhel/pen/eyzwOx
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Animated arrow
+https://codepen.io/HektorW/pen/eJMMaR
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Dot dot dot Codepen
+https://codepen.io/mattonit/pen/vLoddq
 
-### `yarn test`
+Dabbing Unicorn image
+https://www.freepik.com/free-vector/cute-animal-doing-dabbing_2462530.htm#page=1&query=cartoon&position=9#&position=9
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Hand Drawn avatar collection
+https://www.freepik.com/free-vector/cartoon-people-avatar-collection_3950946.htm#page=1&query=cartoon&position=20#&position=20
 
-### `yarn build`
+Monsters
+https://www.freepik.com/free-vector/funny-monsters-collection-hand-drawn-style_2035389.htm#page=1&query=cartoon&position=36#&position=36
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Friends in warm clothes
+https://www.freepik.com/free-vector/friends-wearing-warm-clothes_5866172.htm
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Hand drawn faces
+https://pl.freepik.com/darmowe-wektory/kolekcja-recznie-rysowane-ludzie-avatar_5183186.htm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dustin dribble
+https://dribbble.com/shots/3898604-Dustin-Stranger-things
 
-### `yarn eject`
+Steve
+https://dribbble.com/shots/3930564-Dustin-and-Steve
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Brawl Stars Shark Leon
+https://www.pinterest.co.uk/pin/844565736355660365/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Brawl Stars Sandy
+https://wallpapercave.com/brawl-stars-sandy-wallpapers
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Brawl Stars Leon
+https://wallpapercave.com/w/wp5800682
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Brawl Stars
+https://wallpapercave.com/w/wp5402408
 
-## Learn More
+Brawl Stars Sandy 2
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Brawl Stars Tara
+https://wallpapercave.com/w/wp5800536
 
-### Code Splitting
+Brawl Stars Primo fan art
+https://wallpapercave.com/w/wp5619034
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Rick and morty dog
+https://fanart.tv/series/275274/rick-and-morty/
 
-### Analyzing the Bundle Size
+Rick and Morty dumb Rick
+https://www.pngwing.com/en/free-png-zappg
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Rick and Morty Morty's dad
+https://www.pngbarn.com/png-image-bwvss
 
-### Making a Progressive Web App
+Dog with glasses
+https://www.freepik.com/free-vector/dog-with-drawn-suit_5282528.htm#page=1&query=cartoon%20dog&position=0
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Emotional monsters
+https://www.freepik.com/free-vector/cartoon-cute-monster-set-funny-fantastic-creatures-with-angry-happy-surprised-emotions_2238482.htm#page=1&query=cartoon%20funny%20animal&position=14
 
-### Advanced Configuration
+Cute monsters
+https://www.freepik.com/free-vector/cute-monsters-cartoon_802767.htm#page=2&query=cartoon+alien&position=18
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Flying robot
+https://www.freepik.com/free-vector/chatbot-technology-banner-ai-robot-client-support_7062193.htm#page=1&query=cartoon%20ai&position=8
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Orange robot
+https://www.freepik.com/free-vector/cute-chat-bot-cartoon-collection_6537993.htm#page=1&query=cartoon%20ai&position=28
