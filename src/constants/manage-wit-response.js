@@ -144,7 +144,7 @@ const detectedIntent = (intent, messagesList) => {
       messagesList.unshift({messageBody: make_babies, messageAuthor: "wit"});     
       return messagesList;
     case "sex_duration":
-      const sex_duration = "According to surveys, vaginal sex that lasts one to two minutes is “too short.” Vaginal sex that lasts 10 to 30 minutes is considered “too long.” So how long should vaginal sex actually last? The sex therapists surveyed say that anywhere from 7 to 13 minutes is “desirable.”"
+      const sex_duration = "According to surveys, vaginal sex that lasts one to two minutes is “too short.” Vaginal sex that lasts 10 to 30 minutes is considered “too long.” So how long should vaginal sex actually last? The sex therapists say that anywhere from 7 to 13 minutes is “desirable.”"
 
       messagesList.unshift({messageBody: sex_duration, messageAuthor: "wit"});     
       return messagesList;
