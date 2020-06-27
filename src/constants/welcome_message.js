@@ -12,7 +12,7 @@ export const welcomeChat = [
   {
     p1: "I was created to provide answers to questions of the sexual realm.",
     p2: "There are things that you may want to know, but you're not sure where to find the answers.",
-    p3: "For example: 'What's a shlong?' or 'What's an orgasm?'",
+    p3: "For example: 'What's a shlong?' or 'How long should sex last?'",
   },
   {
     p1: "I do not know who you are or where you are from. This website DOES NOT save cookies, caches, or any other data related to you.",
