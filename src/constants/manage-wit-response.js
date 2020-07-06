@@ -153,6 +153,13 @@ const detectedIntent = (intent, messagesList) => {
 
       messagesList.unshift({messageBody: penis_size, messageAuthor: "wit"});     
       return messagesList;
+
+    case "learn_anal":
+      const anal_sex = "Anal sex is a sex act performed on the anus. Anal sex can involve a penis inserted in the anus, oral stimulation of the anus, using fingers for penetration and using different objects for stimulation."
+      
+      messagesList.unshift({messageBody: anal_sex, messageAuthor: "wit"});     
+      return messagesList;
+
     default:
       messagesList.unshift({messageBody: "Unfortunately I'm not sure what you want to learn about", messageAuthor: "wit"});     
     }
