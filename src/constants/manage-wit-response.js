@@ -11,6 +11,7 @@ import { allSexAnswers } from "./intent-responses/sex";
 import { allForeskinAnswers } from "./intent-responses/foreskin";
 import { allSexToyAnswers } from "./intent-responses/sex-toy";
 import { allVulvaAnswers } from "./intent-responses/vulva";
+import { allProstituteAnswers } from "./intent-responses/prostitute";
 
 const firstIntentValue = data => {
   const val =
@@ -158,6 +159,25 @@ const detectedIntent = (intent, messagesList) => {
       const anal_sex = "Anal sex is a sex act performed on the anus. Anal sex can involve a penis inserted in the anus, oral stimulation of the anus, using fingers for penetration and using different objects for stimulation."
       
       messagesList.unshift({messageBody: anal_sex, messageAuthor: "wit"});     
+      return messagesList;
+
+    case "learn_prostitute":
+      const prostitute = allProstituteAnswers[Math.floor(Math.random() * allProstituteAnswers.length)];
+
+      messagesList.unshift({messageBody: prostitute, messageAuthor: "wit"});     
+      return messagesList;
+
+    case "learn_prostitute_synonym":
+      const prostitute_synonym = "That's most probably a different word for a prostitute."
+      
+      messagesList.unshift({messageBody: prostitute_synonym, messageAuthor: "wit"});     
+      return messagesList;
+
+    case "learn_swear_word":
+      //check ROLES!
+      const swear_word = "That sounds like a swear word. I'm not sure yet what it means, but I'll try to find out!"
+      
+      messagesList.unshift({messageBody: swear_word, messageAuthor: "wit"});     
       return messagesList;
 
     default:
